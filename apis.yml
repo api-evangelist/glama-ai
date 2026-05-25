@@ -1,0 +1,366 @@
+aid: glama-ai
+url: https://raw.githubusercontent.com/api-evangelist/glama-ai/refs/heads/main/apis.yml
+apis:
+- aid: glama-ai:glama-ai-gateway
+  name: Glama AI Gateway
+  tags:
+  - AI
+  - Artificial Intelligence
+  - LLM Gateway
+  - OpenAI Compatible
+  - Multi-Provider
+  humanURL: https://glama.ai/ai/gateway
+  baseURL: https://gateway.glama.ai/v1
+  properties:
+  - url: https://glama.ai/ai/gateway
+    type: Documentation
+  - url: https://glama.ai/ai/models
+    type: Documentation
+  - url: https://gateway.glama.ai/v1
+    type: BaseURL
+  description: OpenAI-compatible LLM gateway exposing 90+ models from OpenAI, Anthropic, Google, DeepSeek, Mistral,
+    xAI, Moonshot, Alibaba (Qwen), Cohere, and Perplexity behind a single base URL (`https://gateway.glama.ai/v1`).
+    Drop-in replacement for any OpenAI SDK with prompt caching, load balancing, fallbacks, reasoning effort levels,
+    text streaming, web search/fetch tools, real-time cost analytics, consolidated billing, and no rate limits
+    under 1B tokens/day. ~40ms median overhead and 99% uptime SLO.
+- aid: glama-ai:glama-mcp-gateway
+  name: Glama MCP Gateway
+  tags:
+  - MCP
+  - Model Context Protocol
+  - Gateway
+  - JSON-RPC
+  - OAuth
+  - Observability
+  humanURL: https://glama.ai/mcp/gateway
+  properties:
+  - url: https://glama.ai/mcp/gateway
+    type: Documentation
+  - url: https://glama.ai/mcp/faq
+    type: Documentation
+  description: Reverse-proxy MCP gateway that fronts hosted, remote, and custom MCP servers under a per-user
+    endpoint of the form `https://glama.ai/endpoints/<connection-profile>/mcp`. The gateway appears as an MCP
+    server to the client and as an MCP client to upstream servers. Features full JSON-RPC payload logging,
+    per-tool access control with approval flows, upstream tool-definition rewriting, managed OAuth 2.1 with
+    automatic refresh, audit log export for SIEM ingestion, session lifecycle tracking, and usage analytics.
+- aid: glama-ai:glama-mcp-registry
+  name: Glama MCP Server Registry
+  tags:
+  - MCP
+  - Model Context Protocol
+  - Marketplace
+  - Discovery
+  - Registry
+  humanURL: https://glama.ai/mcp/servers
+  properties:
+  - url: https://glama.ai/mcp/servers
+    type: Documentation
+  - url: https://glama.ai/mcp/connectors
+    type: Documentation
+  - url: https://glama.ai/mcp/tools
+    type: Documentation
+  - url: https://glama.ai/mcp/clients
+    type: Documentation
+  - url: https://glama.ai/mcp/methodology
+    type: Documentation
+  description: Comprehensive index of 23,000+ MCP servers, 4,000+ managed connectors, and 169,000+ tools spanning
+    86 curated categories. Every server is maintainer-verified, continuously rebuilt from source, and scored for
+    quality and safety. The registry is positioned as a superset of the official Model Context Protocol Registry
+    with tool-level search, browser-based testing, one-click install or deploy, and quality scoring informed by
+    Glama's own research on tool-definition quality.
+- aid: glama-ai:glama-mcp-hosting
+  name: Glama MCP Hosting
+  tags:
+  - MCP
+  - Model Context Protocol
+  - Hosting
+  - Deployment
+  humanURL: https://glama.ai/mcp/hosting
+  properties:
+  - url: https://glama.ai/mcp/hosting
+    type: Documentation
+  - url: https://glama.ai/blog/2025-09-10-glama-mcp-server-hosting
+    type: Blog
+  - url: https://glama.ai/blog/2025-12-06-mcp-hosting-with-persistent-storage
+    type: Blog
+  description: One-click managed hosting for any MCP server. Submit a GitHub repository and Glama indexes every
+    tool, schema, and annotation, then offers a single click to deploy the server onto Glama's managed
+    infrastructure with SSE security, persistent storage, automatic rebuilds from source, and per-tool access
+    controls fronted by the Glama MCP Gateway. Free for open-source servers; paid hosting tiers (Starter/Pro/
+    Business) determine the number of "fast hosted MCP servers" included.
+- aid: glama-ai:glama-mcp-inspector
+  name: Glama MCP Inspector
+  tags:
+  - MCP
+  - Model Context Protocol
+  - Inspector
+  - Debugging
+  - Testing
+  humanURL: https://glama.ai/mcp/inspector
+  properties:
+  - url: https://glama.ai/mcp/inspector
+    type: Documentation
+  - url: https://glama.ai/blog/2025-07-24-using-mcp-inspector-to-test-tools-prompts-and-resources
+    type: Blog
+  - url: https://glama.ai/blog/2025-07-27-how-to-use-mcp-inspector-with-remote-or-cloud-hosted-mcp-servers
+    type: Blog
+  description: Browser-based MCP debugger that spins up an ephemeral sandbox from a server URL. Lets developers
+    exercise tools with structured inputs, view raw JSON-RPC traffic, complete OAuth flows, test prompts and
+    resources, and share debug sessions via a unique URL. Works against local, remote, and Glama-hosted servers.
+- aid: glama-ai:glama-chat
+  name: Glama Chat and Playground
+  tags:
+  - AI
+  - Chat
+  - Playground
+  - MCP
+  humanURL: https://glama.ai
+  properties:
+  - url: https://glama.ai
+    type: Documentation
+  - url: https://glama.ai/ai/models
+    type: Documentation
+  description: All-in-one AI workspace that chats with any MCP server the user owns, routed through the Glama
+    Gateway so every tool call is visible and controllable. Supports file uploads (PDFs), projects, memory, web
+    fetch and web search tools, persistent storage, custom exports, and routing across 90+ models via the AI
+    gateway. Subscription tiers include monthly AI credits and a number of fast hosted MCP servers.
+- aid: glama-ai:glama-automations
+  name: Glama Automations
+  tags:
+  - Automation
+  - Workflows
+  - AI Agents
+  humanURL: https://glama.ai/blog/2025-10-22-what-are-automations
+  properties:
+  - url: https://glama.ai/blog/2025-10-22-what-are-automations
+    type: Blog
+  - url: https://glama.ai/blog/2025-09-15-automating-git-hub-pull-request-security-checks-with-glama-ai-automation-feature
+    type: Blog
+  description: Workflow automation primitive on the Glama platform. Composes MCP servers, the AI gateway, and
+    Glama Chat into scheduled or event-triggered jobs (e.g., GitHub pull-request security checks) with full
+    observability through the gateway log surface.
+name: Glama
+tags:
+- AI
+- Artificial Intelligence
+- MCP
+- Model Context Protocol
+- LLM Gateway
+- MCP Gateway
+- MCP Marketplace
+- AI Workspace
+- Multi-Provider
+- OAuth
+- Observability
+kind: contract
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+access: 3rd-Party
+common:
+- type: Portal
+  url: https://glama.ai
+- type: Documentation
+  url: https://glama.ai/mcp/faq
+- type: GettingStarted
+  url: https://glama.ai/mcp/faq
+- type: Pricing
+  url: https://glama.ai/pricing
+- type: Blog
+  url: https://glama.ai/blog
+- type: ChangeLog
+  url: https://glama.ai/release-notes
+- type: StatusPage
+  url: https://glama.ai/status
+- type: Support
+  url: https://glama.ai/support
+- type: Newsletter
+  url: https://glama.ai/newsletter
+- type: Careers
+  url: https://glama.ai/careers
+- type: TermsOfService
+  url: https://glama.ai/policies/terms-of-service
+- type: PrivacyPolicy
+  url: https://glama.ai/policies/privacy-policy
+- type: SecurityPolicy
+  url: https://glama.ai/policies/vulnerability-disclosure
+- type: SignUp
+  url: https://glama.ai
+- type: Forum
+  name: Discord
+  url: https://discord.gg/glama
+- type: Forum
+  name: Reddit
+  url: https://www.reddit.com/r/glama
+- type: GitHubOrganization
+  url: https://github.com/glama-ai
+- type: SDK
+  name: Lightport (open-source AI gateway)
+  url: https://github.com/glama-ai/lightport
+- type: Tool
+  name: rjsf-validator-cfworker
+  url: https://github.com/glama-ai/rjsf-validator-cfworker
+- type: Documentation
+  name: MCP Servers
+  url: https://glama.ai/mcp/servers
+- type: Documentation
+  name: MCP Connectors
+  url: https://glama.ai/mcp/connectors
+- type: Documentation
+  name: MCP Tools
+  url: https://glama.ai/mcp/tools
+- type: Documentation
+  name: MCP Clients
+  url: https://glama.ai/mcp/clients
+- type: Documentation
+  name: MCP Hosting
+  url: https://glama.ai/mcp/hosting
+- type: Documentation
+  name: MCP Inspector
+  url: https://glama.ai/mcp/inspector
+- type: Documentation
+  name: MCP Gateway
+  url: https://glama.ai/mcp/gateway
+- type: Documentation
+  name: MCP Registry Methodology
+  url: https://glama.ai/mcp/methodology
+- type: Documentation
+  name: AI Gateway
+  url: https://glama.ai/ai/gateway
+- type: Models
+  url: https://glama.ai/ai/models
+- type: Documentation
+  name: Quickstart - Publish an MCP Server
+  url: https://glama.ai/blog/2026-01-24-quickstart-publishing-a-server
+- type: Documentation
+  name: Official MCP Registry server.json requirements
+  url: https://glama.ai/blog/2026-01-24-official-mcp-registry-serverjson-requirements
+- type: Documentation
+  name: Model Context Protocol
+  url: https://modelcontextprotocol.io
+- type: Pricing
+  url: https://glama.ai/pricing
+  data:
+  - id: starter
+    name: Starter
+    entries:
+    - geo: US
+      unit: 1
+      label: User
+      limit: 1
+      price: 9
+      metric: user
+      timeFrame: month
+      description: Monthly subscription including $9 of AI credits.
+    elements:
+    - name: Chat and API access with no rate limits
+    - name: 3 fast hosted MCP servers ($4 per additional)
+    - name: 100k logs per month ($9 per additional 100k)
+    - name: 30-day log retention
+    description: Personal use focused tier.
+  - id: pro
+    name: Pro
+    entries:
+    - geo: US
+      unit: 1
+      label: User
+      limit: 1
+      price: 26
+      metric: user
+      timeFrame: month
+      description: Monthly subscription including $26 of AI credits.
+    elements:
+    - name: Everything in Starter
+    - name: File uploads (PDFs), projects, memory, web fetch and web search tools
+    - name: 10 fast hosted MCP servers ($3 per additional)
+    - name: Persistent storage
+    - name: 100k logs per month ($6 per additional 100k)
+    - name: 90-day log retention
+    description: Collaboration-oriented tier.
+  - id: business
+    name: Business
+    entries:
+    - geo: US
+      unit: 1
+      label: User
+      limit: 1
+      price: 80
+      metric: user
+      timeFrame: month
+      description: Monthly subscription including $80 of AI credits.
+    elements:
+    - name: Everything in Pro
+    - name: Custom exports and priority support
+    - name: 30 fast hosted MCP servers ($2 per additional)
+    - name: 100k logs per month ($3 per additional 100k)
+    - name: 180-day log retention
+    description: Automated-workflows tier.
+  - id: open-source-hosting
+    name: Open-Source MCP Hosting
+    entries:
+    - geo: US
+      unit: 1
+      label: Server
+      price: Free
+      metric: server
+      timeFrame: month
+      description: Free hosting for open-source MCP servers.
+    description: Free deployment and hosting on Glama for any open-source MCP server.
+  name: Plans
+  type: Plans
+- type: Features
+  data:
+  - MCP server registry indexing 23,000+ servers, 4,000+ connectors, and 169,000+ tools across 86 categories
+  - Maintainer-verified and continuously rebuilt MCP servers with quality and safety scoring
+  - Browser-based MCP Inspector with ephemeral sandbox, JSON-RPC trace view, OAuth flow handling, and shareable
+    sessions
+  - One-click MCP server hosting from any GitHub repository with persistent storage and SSE security
+  - Free open-source MCP server hosting
+  - MCP Gateway with per-user endpoint, full JSON-RPC payload logging, per-tool access control, OAuth 2.1
+    credential management, audit log export, and session lifecycle tracking
+  - Upstream tool-definition rewriting at the gateway layer
+  - OpenAI-compatible AI gateway at `https://gateway.glama.ai/v1`
+  - 90+ models across OpenAI, Anthropic, Google, DeepSeek, Mistral, xAI, Moonshot (Kimi), Alibaba (Qwen), Cohere,
+    and Perplexity
+  - Drop-in SDK compatibility with OpenAI SDKs and LangChain
+  - Prompt caching, load balancing, automatic fallbacks, and reasoning-effort presets (low / medium / high)
+  - Web search and web fetch tools across the gateway
+  - Real-time cost analytics and consolidated billing with no markup on listed provider prices
+  - ~40ms median gateway latency and stated 99% uptime
+  - No rate limits under 1B tokens/day; higher quotas negotiable within 48 hours
+  - Glama Chat playground with file uploads (PDFs), projects, memory, persistent storage, custom exports, and any
+    MCP server the user owns
+  - Automations primitive composing MCP servers, the AI gateway, and Chat into scheduled or triggered workflows
+  - MCP Sampling support (servers can request LLM completions during execution)
+  - Progress notifications, audio/image responses, and elicitations support in MCP
+  - Lightport, an open-source lightweight gateway that makes LLM providers OpenAI-compatible
+  - Three commercial plans (Starter $9, Pro $26, Business $80) bundling AI credits and fast hosted MCP servers
+  sources:
+  - https://glama.ai
+  - https://glama.ai/mcp/gateway
+  - https://glama.ai/mcp/servers
+  - https://glama.ai/mcp/hosting
+  - https://glama.ai/mcp/inspector
+  - https://glama.ai/ai/gateway
+  - https://glama.ai/ai/models
+  - https://glama.ai/pricing
+  - https://glama.ai/release-notes
+  - https://glama.ai/blog
+  updated: '2026-05-25'
+created: '2026-05-25T00:00:00.000Z'
+modified: '2026-05-25'
+position: Consuming
+description: Glama is an all-in-one AI workspace combining an MCP server marketplace and registry, a managed MCP
+  gateway, one-click MCP server hosting, an OpenAI-compatible LLM gateway routing 90+ models across OpenAI,
+  Anthropic, Google, DeepSeek, Mistral, xAI and other providers, and Glama Chat with built-in projects, memory,
+  web tools, and automations. The Glama MCP Registry indexes 23,000+ MCP servers, 4,000+ managed connectors, and
+  169,000+ tools across 86 categories, and Glama positions itself as a superset of the official MCP Registry,
+  with maintainer verification, continuous rebuilds, and capability-level quality scoring. The Glama MCP Gateway
+  fronts every hosted, remote, or custom MCP server behind a per-user endpoint with full JSON-RPC logging,
+  per-tool access control, managed OAuth 2.1, and audit log export. The Glama AI Gateway is OpenAI-compatible at
+  `https://gateway.glama.ai/v1` and provides prompt caching, load balancing, fallbacks, reasoning effort levels,
+  web search and fetch tools, real-time cost analytics, and consolidated billing with no markup.
+maintainers:
+- FN: Kin Lane
+  email: info@apievangelist.com
+  X: apievangelist
+  url: https://apievangelist.com
+specificationVersion: '0.16'

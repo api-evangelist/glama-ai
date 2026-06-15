@@ -2,6 +2,13 @@
   "repo": "glama-ai",
   "feeds": [
     {
+      "source": "https://glama.ai/blog",
+      "feed_url": "https://glama.ai/blog/rss.xml",
+      "title": "",
+      "saved": 0,
+      "method": "discovered"
+    },
+    {
       "source": "https://glama.ai/blog/2025-09-10-glama-mcp-server-hosting",
       "feed_url": "https://glama.ai/blog/2025-09-10-glama-mcp-server-hosting",
       "title": "",
@@ -52,5 +59,5 @@
     }
   ],
   "post_count": 0,
-  "fetched": "2026-06-01T23:35:02Z"
+  "fetched": "2026-06-14T20:42:17Z"
 }

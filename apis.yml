@@ -182,20 +182,20 @@ common:
   url: https://glama.ai/policies/privacy-policy
 - type: SecurityPolicy
   url: https://glama.ai/policies/vulnerability-disclosure
-- type: SignUp
+- type: Signup
   url: https://glama.ai
-- type: Forum
+- type: Forums
   name: Discord
   url: https://discord.gg/glama
-- type: Forum
+- type: Forums
   name: Reddit
   url: https://www.reddit.com/r/glama
 - type: GitHubOrganization
   url: https://github.com/glama-ai
-- type: SDK
+- type: SDKs
   name: Lightport (open-source AI gateway)
   url: https://github.com/glama-ai/lightport
-- type: Tool
+- type: Tools
   name: rjsf-validator-cfworker
   url: https://github.com/glama-ai/rjsf-validator-cfworker
 - type: Documentation

@@ -13,51 +13,58 @@
       "feed_url": "https://glama.ai/blog/2025-09-10-glama-mcp-server-hosting",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://glama.ai/blog/2025-12-06-mcp-hosting-with-persistent-storage",
       "feed_url": "https://glama.ai/blog/2025-12-06-mcp-hosting-with-persistent-storage",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://glama.ai/blog/2025-07-24-using-mcp-inspector-to-test-tools-prompts-and-resources",
       "feed_url": "https://glama.ai/blog/2025-07-24-using-mcp-inspector-to-test-tools-prompts-and-resources",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://glama.ai/blog/2025-07-27-how-to-use-mcp-inspector-with-remote-or-cloud-hosted-mcp-servers",
       "feed_url": "https://glama.ai/blog/2025-07-27-how-to-use-mcp-inspector-with-remote-or-cloud-hosted-mcp-servers",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://glama.ai/blog/2025-10-22-what-are-automations",
       "feed_url": "https://glama.ai/blog/2025-10-22-what-are-automations",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://glama.ai/blog/2025-09-15-automating-git-hub-pull-request-security-checks-with-glama-ai-automation-feature",
       "feed_url": "https://glama.ai/blog/2025-09-15-automating-git-hub-pull-request-security-checks-with-glama-ai-automation-feature",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     },
     {
       "source": "https://glama.ai/pricing",
       "feed_url": "https://glama.ai/pricing",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "none",
+      "error": "parse_failed"
     }
   ],
   "post_count": 37,
-  "fetched": "2026-08-06T14:08:46Z"
+  "fetched": "2026-08-15T12:11:08Z"
 }

@@ -4,6 +4,11 @@ apis:
 - aid: glama-ai:glama-ai-gateway
   name: Glama AI Gateway
   tags:
+  - Artificial Intelligence
+  - LLM Gateway
+  - OpenAI-Compatible
+  - Multi-Provider
+  tags_raw:
   - AI
   - Artificial Intelligence
   - LLM Gateway
@@ -27,6 +32,12 @@ apis:
   name: Glama MCP Gateway
   tags:
   - MCP
+  - Gateway
+  - JSON-RPC
+  - Authentication
+  - Observability
+  tags_raw:
+  - MCP
   - Model Context Protocol
   - Gateway
   - JSON-RPC
@@ -46,6 +57,11 @@ apis:
 - aid: glama-ai:glama-mcp-registry
   name: Glama MCP Server Registry
   tags:
+  - MCP
+  - Marketplace
+  - Discovery
+  - Registry
+  tags_raw:
   - MCP
   - Model Context Protocol
   - Marketplace
@@ -72,6 +88,10 @@ apis:
   name: Glama MCP Hosting
   tags:
   - MCP
+  - Hosting
+  - Deployment
+  tags_raw:
+  - MCP
   - Model Context Protocol
   - Hosting
   - Deployment
@@ -92,6 +112,11 @@ apis:
   name: Glama MCP Inspector
   tags:
   - MCP
+  - Inspector
+  - Debugging
+  - Testing
+  tags_raw:
+  - MCP
   - Model Context Protocol
   - Inspector
   - Debugging
@@ -110,6 +135,11 @@ apis:
 - aid: glama-ai:glama-chat
   name: Glama Chat and Playground
   tags:
+  - Artificial Intelligence
+  - Chat
+  - Playground
+  - MCP
+  tags_raw:
   - AI
   - Chat
   - Playground
@@ -141,6 +171,16 @@ apis:
     observability through the gateway log surface.
 name: Glama
 tags:
+- Artificial Intelligence
+- MCP
+- LLM Gateway
+- MCP Gateway
+- MCP Marketplace
+- AI Workspace
+- Multi-Provider
+- Authentication
+- Observability
+tags_raw:
 - AI
 - Artificial Intelligence
 - MCP

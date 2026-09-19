@@ -32,7 +32,7 @@ apis:
   name: Glama MCP Gateway
   tags:
   - MCP
-  - Gateway
+  - Gateways
   - JSON-RPC
   - Authentication
   - Observability

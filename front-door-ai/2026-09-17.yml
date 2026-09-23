@@ -1,0 +1,35 @@
+# Front Door AI Index — glama-ai — 2026-09-17
+# AI vocabulary counted on the provider's root page. Generated; do not edit.
+# `score` is null unless ownership is `own` — see front_door_ai.py.
+front_door_ai:
+  slug: glama-ai
+  lexicon_version: '1.0'
+  probed_at: '2026-09-17'
+  host: www.glama.ai
+  final_host: glama.ai
+  ownership: own
+  owner: glama-ai
+  shares_host_with: null
+  inherited_from: null
+  verdict: scored
+  score: 123
+  host_score: 123
+  density: 64.43
+  words: 1909
+  tiers:
+    agentic: 91
+    core: 11
+    model: 21
+  ambiguous: 12
+  top_terms:
+    MCP: 85
+    Claude: 15
+    agent: 10
+    AI: 8
+    ChatGPT: 5
+    model context protocol: 4
+    LLMs: 3
+    prompts: 2
+    Gemini: 1
+    automation: 1
+    intelligence: 1

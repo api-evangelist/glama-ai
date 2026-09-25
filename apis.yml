@@ -218,6 +218,8 @@ accessModel:
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/glama-ai.png
 access: 3rd-Party
 common:
+- type: VendorFacets
+  url: vendor-facets/glama-ai-vendor-facets.yml
 - type: Website
   url: https://www.glama.ai/
 - type: DomainSecurity
